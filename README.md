@@ -1,24 +1,11 @@
-# README
+## Docker Build
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+docker build . -t jshimazu/ad-transform
+```
 
-Things you may want to cover:
+## Docker Run
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+docker run -it --rm -p 3000:3000 -v "$PWD":/usr/src/app jshimazu/ad-transform
+```
